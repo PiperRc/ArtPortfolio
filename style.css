@@ -55,7 +55,7 @@ nav {
 }
 
 .navbar-custom{
-    background-color: #F7CAC9
+    background-color: #F7CAC9;
 }
 
 .facebook-nav,
@@ -72,12 +72,21 @@ nav {
     width: 100%;
 }
 
+
+
+.navbar-nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item{
+    transition-duration: 1s;
+}
+
 .nav-item:hover{
-    background-color: #ffe4e1;
-}
-.facebook-nav:hover,.instagram-nav:hover{
-    background-color: transparent;
-}
+    transform: scale(1.5);
+} 
 /*  */
 
 .gallery img, .facebook-img img, .instagram-img img {
@@ -85,7 +94,7 @@ nav {
 }
 
 .gallery img:hover, .facebook-img img:hover, .instagram-img img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -254,7 +263,7 @@ nav {
     }
 
     .nav-item:hover, .navbar-brand:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
 
     }
 
