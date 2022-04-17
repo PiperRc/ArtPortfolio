@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding-bottom: 3rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.heading {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery a {
+    width: 95%;
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+.gallery a:nth-child(1) {
+    margin-top: 3rem;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.full-gallery-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    transition-duration: .5s;
+}
+
+.full-gallery-link:hover{
+    transform: scale(1.2);
+}
+
+/* navbar */
+nav {
+    font-size: 2rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+
+.facebook-nav,
+.instagram-nav {
+    width: 2.5rem;
+}
+
+.nav-item, .navbar-brand {
+    transition-duration: .4s;
+}
+
+.nav-item:hover, .navbar-brand:hover {
+    transform: scale(1.2);
+
+}
+
+
+.facebook-nav img,
+.instagram-nav img {
+    width: 100%;
+}
+
+/*  */
+
+.gallery img, .facebook-img img, .instagram-img img {
+    transition-duration: 1s;
+}
+
+.gallery img:hover, .facebook-img img:hover, .instagram-img img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.social-media-icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons {
+   
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.social-media {
+    margin-top: 4rem;
+}
+
+.social-media h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.facebook-img, .instagram-img {
+    width: 20%;
+    max-width: 30px;
+}
+
+.facebook-img {
+    margin-right: 3rem;
+}
+
+.social-media img {
+    width: 100%;
+}
+
+/* about.html */
+
+.self-picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.self-picture img {
+    width: 70%;
+    max-width: 500px;
+}
+
+.about-carol {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+.about-carol p {
+    border: 1px solid green;
+    font-size: 3rem;
+    width: 90%;
+    max-width: 800px;
+}
+
+/*  */
+
+/* contact.html */
+.contact-container {
+    margin-top: 3rem;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact-info {
+    border: 1px solid red;
+    width: 95%;
+}
+
+.contact-heading {
+    margin-bottom: 4rem;
+}
+
+.contact-heading h1 {
+    text-align: center;
+}
+
+.contact-info label {
+    display: block;
+}
+
+.contact-info button {
+    display: block;
+    font-size: 3rem;
+    transition-duration: .5s;
+  
+}
+
+.contact-info  button:hover{
+   background-color:darkorange;
+   padding-left: 2rem;
+   padding-right: 2rem;
+   transform: scale(1.2);
+}
+.contact-info form label {
+    font-size: 1.5rem;
+}
+
+#email {
+    width: 90%;
+    margin-bottom: 4rem;
+    max-width: 500px;
+    font-size: 2rem;
+
+}
+
+#message {
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+
+}
+
+.contact-info form button {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/*  */
+
+@media screen and (min-width:900px) {
+
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+
+    }
+
+    .navbar-nav li {
+        margin-left: 4rem;
+    }
+
+    .facebook-nav,
+    .instagram-nav {
+        width: 3rem;
+    }
+
+    .contact-nav {
+        margin-right: 70rem;
+    }
+}
