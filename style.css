@@ -73,7 +73,7 @@ nav {
 }
 
 .nav-item:hover{
-    background-color: white;
+    background-color: #ffe4e1;
 }
 .facebook-nav:hover,.instagram-nav:hover{
     background-color: transparent;
