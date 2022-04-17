@@ -45,7 +45,7 @@ html {
     transition-duration: .5s;
 }
 
-.full-gallery-link:hover{
+.full-gallery-link:hover {
     transform: scale(1.2);
 }
 
@@ -69,7 +69,7 @@ nav {
 }
 
 .nav-item:hover, .navbar-brand:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
 
@@ -98,7 +98,7 @@ nav {
 }
 
 .social-media-icons {
-   
+
     display: flex;
     justify-content: center;
     width: 50%;
@@ -186,15 +186,16 @@ nav {
     display: block;
     font-size: 3rem;
     transition-duration: .5s;
-  
+
 }
 
-.contact-info  button:hover{
-   background-color:darkorange;
-   padding-left: 2rem;
-   padding-right: 2rem;
-   transform: scale(1.2);
+.contact-info button:hover {
+    background-color: darkorange;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transform: scale(1.2);
 }
+
 .contact-info form label {
     font-size: 1.5rem;
 }
@@ -246,4 +247,15 @@ nav {
     .contact-nav {
         margin-right: 70rem;
     }
+
+    .nav-item, .navbar-brand {
+        transition-duration: .4s;
+    }
+
+    .nav-item:hover, .navbar-brand:hover {
+        transform: scale(1.2);
+
+    }
+
+
 }
