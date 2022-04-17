@@ -64,14 +64,14 @@ nav {
     width: 2.5rem;
 }
 
-.nav-item, .navbar-brand {
+/* .nav-item, .navbar-brand {
     transition-duration: .4s;
 }
 
 .nav-item:hover, .navbar-brand:hover {
     transform: scale(1.1);
 
-}
+} */
 
 
 .facebook-nav img,
