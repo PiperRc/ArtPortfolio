@@ -3,6 +3,7 @@
 
 const quote = document.querySelector('.quote');
 const quoteAuthor=document.querySelector('.quote-author')
+const newQutoeBtn=document.querySelector('.new-quote-btn')
 
 const getQuote = async () => {
     try{
@@ -17,9 +18,12 @@ const getQuote = async () => {
     }
 }
 
-
-window.addEventListener('load',()=>{
+newQutoeBtn.addEventListener('click',()=>{
     getQuote();
 })
+
+// window.addEventListener('load',()=>{
+//     getQuote();
+// })
 
 // 
