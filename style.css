@@ -208,6 +208,11 @@ nav {
     width: 10rem;
 }
 
+.new-quote-btn{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
 /*  */
 
 /* contact.html */
