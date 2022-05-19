@@ -12,46 +12,17 @@ html {
     font-size: 62.5%;
 }
 
-.heading {
-    padding-top: 3rem;
-    text-align: center;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gallery a {
-    width: 95%;
-    max-width: 800px;
-    margin-bottom: 3rem;
-}
-
-.gallery a:nth-child(1) {
-    margin-top: 3rem;
-}
-
-.gallery img {
-    width: 100%;
-}
-
-.full-gallery-link {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2rem;
-    transition-duration: .5s;
-}
-
-.full-gallery-link:hover {
-    transform: scale(1.2);
-}
-
 /* navbar */
+
 nav {
     font-size: 2rem;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
 }
 
 .navbar-custom {
@@ -72,8 +43,6 @@ nav {
     width: 100%;
 }
 
-
-
 .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -88,22 +57,90 @@ nav {
     transform: scale(1.5);
 }
 
-/*  */
+/*index.html  */
 
-.gallery img, .facebook-img img, .instagram-img img {
-    transition-duration: 1s;
+
+.heading {
+    padding-top: 3rem;
+    text-align: center;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.facebook-img img:hover, .instagram-img img:hover {
+.gallery a {
+    width: 93%;
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+.gallery a:nth-child(1) {
+    margin-top: 3rem;
+}
+
+.gallery img {
+    width: 100%;
+    transition-duration: .5s;
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.plus {
+    position: absolute;
+    width: 5rem;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+/* hovering over img-container will affect img and img.plus */
+.img-container:hover img {
+    opacity: 0.5;
+}
+
+.img-container:hover img.plus {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.img-container {
+    transition-duration: 0.5s;
+}
+
+.img-container:hover {
+    background-color: #ff8080
+}
+
+
+.full-gallery-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    transition-duration: .5s;
+}
+
+.full-gallery-link:hover {
+    transform: scale(1.2);
+}
+
+.facebook-img img,
+.instagram-img img {
+    transition-duration: .5s;
+}
+
+.facebook-img img:hover,
+.instagram-img img:hover {
     transform: scale(1.5);
     cursor: pointer;
 }
-
 
 .social-media-icons-container {
     display: flex;
@@ -126,7 +163,8 @@ nav {
     margin-bottom: 2rem;
 }
 
-.facebook-img, .instagram-img {
+.facebook-img,
+.instagram-img {
     width: 20%;
     max-width: 30px;
 }
@@ -138,6 +176,8 @@ nav {
 .social-media img {
     width: 100%;
 }
+
+
 
 /* about.html */
 
@@ -153,29 +193,22 @@ nav {
 }
 
 .about-carol {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
     font-size: 2rem;
-
-
 }
 
-
 .about-carol div {
-    /* border: 1px solid green; */
     max-width: 1100px;
     width: 90%;
 }
 
 .about-carol h2 {
     text-align: center;
-    /* margin-top:3rem; */
     margin-bottom: 3rem;
     color: blueviolet;
-
 }
 
 .about-carol p {
@@ -183,7 +216,8 @@ nav {
     margin-bottom: 3rem;
 }
 
-.quote, .quote-author {
+.quote,
+.quote-author {
     font-size: 3rem;
 }
 
@@ -208,24 +242,22 @@ nav {
     width: 10rem;
 }
 
-.new-quote-btn{
+.new-quote-btn {
     display: block;
     text-align: center;
     font-size: 2rem;
 }
-/*  */
+
 
 /* contact.html */
 .contact-container {
     margin-top: 3rem;
-    /* border: 1px solid green; */
     display: flex;
     justify-content: center;
 }
 
 
 .contact-info {
-    /* border: 1px solid red; */
     width: 95%;
 }
 
@@ -282,8 +314,6 @@ nav {
 }
 
 
-/*  */
-
 @media screen and (min-width:900px) {
 
 
@@ -315,11 +345,13 @@ nav {
         margin-right: 70rem;
     }
 
-    .nav-item, .navbar-brand {
+    .nav-item,
+    .navbar-brand {
         transition-duration: .4s;
     }
 
-    .nav-item:hover, .navbar-brand:hover {
+    .nav-item:hover,
+    .navbar-brand:hover {
         transform: scale(1.1);
 
     }
